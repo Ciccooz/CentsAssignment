@@ -10,5 +10,8 @@ document.getElementById('calculatorForm').addEventListener('submit', async funct
         body: JSON.stringify({ num1, num2 })
     })
     .then(response => response.json())
-    .then(data => document.getElementById('sum').innerText = `Sum = ${data.sum}` ) //showing the sum
+    .then(data => { //showing the prime number and the sum
+        document.getElementById('prime').innerText = `${data.prime}`;
+        document.getElementById('sum').innerText = `${data.sum}`;
+    }) 
 })

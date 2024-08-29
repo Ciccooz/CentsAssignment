@@ -12,13 +12,19 @@
       <h1>Calculator</h1>
 
       <form id="calculatorForm">
-        <input type="number" id="num1" placeholder="First Number" required>
-        <input type="number" id="num2" placeholder="Second Number" required>
+        <div class="calculator">
+          <input type="number" id="num1" placeholder="0" required>
+          <span>+</span>
+          <input type="number" id="num2" placeholder="0" required>
+        </div>
 
         <button type="submit">Sum</button>
       </form>
 
-      <div id="sum"></div>
+      <div class="result" id="result">
+        <p>The prime number is <span id="prime"></span></p>
+        <p>The sum is <span id="sum"></span></p>
+      </div>
     </div>
     
 	  <script src="script.js"></script>
